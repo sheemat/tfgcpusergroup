@@ -94,7 +94,7 @@ resource "googleworkspace_group" "gcpGroup" {
 
 resource "googleworkspace_group_member" "manager" {
 
-   for_each = googleworkspace_user.gcpUser
+  for_each = googleworkspace_user.gcpUser
   group_id = googleworkspace_group.gcpGroup.id
   email    = each.value.primary_email
 

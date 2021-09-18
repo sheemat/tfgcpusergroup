@@ -10,4 +10,5 @@ variable "group" {
 
 variable "emails" {
   type = list
+  
 }
